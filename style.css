@@ -1,0 +1,22 @@
+/* Grundlegendes Reset und Basis-Styling (gleich für alle Browsers */  
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+/* Schriftart */
+font-family: "Helvetica Neue", Arial, sans-serif;
+/* Schriftgröße */
+font-size: 1em;
+line-height: 1.6;
+/* Farben */
+color: #333;
+background-color: #f8f8f8;
+/* Maximale Breite setzen */
+max-width: 1200px;
+/* Zentrieren der Inhalte  - zuerst wird alles zentriert, sehr wichtig 0 -oben/unten 0 -limks rechts*/
+margin: 0 auto;
+/* Innere Abstaende */
+padding: 0 20px;
+}
