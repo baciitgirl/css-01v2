@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flex</title>
+    <style>
+      ul {
+        background-color: steelblue;
+      }
+      ul li {
+        list-style-type: none;
+        color: #fcfcf0;
+        background-color: #f8ab0b;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        /* width: 30%; */
+        flex-grow: 1;
+        order: 2;
+      }
+      ul li.active {
+        background-color: #b53d2c;
+        order: 1;
+        /* flex-grow: 2; */
+        /* align-self: flex-end; */
+      }
+
+      ul {
+        display: flex;
+        /* row reverse oder columnn auch geht */
+        flex-direction: row;
+        /* flex-direction:column; */
+        /* flex-direction:row-reverse; */
+
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>File</li>
+      <li>Edit</li>
+      <li class="active">Selection</li>
+      <li>View</li>
+    </ul>
+  </body>
+</html>
